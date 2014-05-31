@@ -1,0 +1,24 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: pkg-manager-no-autoupdate
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, git
+Homepage: https://github.com/Whonix/pkg-manager-no-autoupdate
+Vcs-Browser: https://github.com/Whonix/pkg-manager-no-autoupdate
+Vcs-Git: https://github.com/Whonix/pkg-manager-no-autoupdate.git
+Standards-Version: 3.9.4
+
+Package: pkg-manager-no-autoupdate
+Architecture: all
+Depends: ${misc:Depends}
+Description: Deactivates automatic updates for Package Manager APT
+ Useful in context of networks with limited traffic quota, slow networks and
+ anonymity distributions.
+ .
+ In latter case, the default automatic updates interval would be too
+ predictable (expectable amount of traffic every X), thus eventually be
+ vulnerable for traffic fingerprinting.
