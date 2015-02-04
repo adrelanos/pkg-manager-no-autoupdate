@@ -1,0 +1,156 @@
+commit c2e25693cce16b4ca1292b3051b814e61b7664a8
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:40:46 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit cbdd4b0e6756873471842215ad0642b5cf090934
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:58:50 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit e61efd5b07b1f91d4c72d3b4587c881e207e5ef3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:34:50 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit bcb37b09b24353d8e2ba95060910e71d463de496
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 5 19:01:17 2014 +0000
+
+    updated generic makefile
+
+commit 050fe42ef2555204d9e99951f97ff0033e5da924
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Oct 28 22:35:26 2014 +0000
+
+    makefile: refactoring, avoid using IFS
+
+commit 68a7a6f3be96299117614e01539e569bee5f2b86
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Oct 25 01:58:52 2014 +0000
+
+    makefile:
+    - make debdist; make undebdist
+    - cleanup
+    - refactoring
+
+commit 7c03c5d3a192eb807936b82755c2d07e1f1746f1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Oct 23 22:43:03 2014 +0000
+
+    makefile:
+    - new target "make undist", which deletes the upstream tarball
+    - $DISTDIR variable for make (un)dist, which defaults to ".." and can be used to create upstream tarballs in arbitrary locations
+    - refactoring, all function names and global variables now start with "make_" to make the script `source`ing friendly
+    - made `source`able
+
+commit dcb19b18198eac941d045b5acfa89344775efbe3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 13 12:36:56 2014 +0000
+
+    readme
+
+commit 72dec1a4f8113774fefd5b1fd38661ec9e813d2a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 19 18:52:41 2014 +0000
+
+    makefile: added new feature "make deb-chl-bumpup" - Bump upstream version number in debian/changelog.
+
+commit dbcc8b5e5755f3be9ac0394cc175366eee0449e3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:54:25 2014 +0000
+
+    Updated debian/changelog.
+
+commit 678ba6f0e5a8a5dae2b04ecd8892f9fd15979564
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 20:47:28 2014 +0000
+
+    Fixed changelog date.
+
+commit e322e1252edfa66c0730cb758488939ea0c32207
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 17 18:03:29 2014 +0000
+
+    bump version number
+
+commit b9e38a6f8fc6479bd8d0c6ee48717876b8f8ced2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 14 13:35:18 2014 +0000
+
+    Implemented make deb-icup: Combination of make deb-pkg, make deb-pkg-install and make deb-pkg-cleanup.
+
+commit de631bf59d6059062aa7dc8b1e38f0e759821231
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 12:42:28 2014 +0000
+
+    packaging
+
+commit 4c9aa4bcbde80e0bcd0681ef9e0db9e71aa778de
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jul 27 04:01:13 2014 +0000
+
+    packaging
+
+commit 29f7b66d76bec53eb1b5209abc1b853a48d2de6a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:26:38 2014 +0000
+
+    packaging
+
+commit 2bf199535a51244d4cc69177f95dd1b7056059db
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 26 15:16:05 2014 +0000
+
+    packaging: removed build dependency on git, since the .git folder won't be included in the upstream tarball.
+
+commit d4f888718bab3f0fd54277edbe4383269162d86e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 17:11:02 2014 +0000
+
+    packaging
+
+commit 9a9f739718f8d18c13cd10a9a0d1ffbfde3fca91
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 12 15:34:18 2014 +0000
+
+    packaging
+
+commit 3eff42891eeced014c2fb2e180bad72045f030aa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jul 5 08:09:44 2014 +0000
+
+    Bumped debian revision number to avoid lintian warning "new-package-should-close-itp-bug" so we can use lintian --fail-on-warnings as sanity test.
+
+commit 991b6c0f64166b2d4ae23e05889dcabf42120f62
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 24 15:45:13 2014 +0000
+
+    added debian epoch; added dotglob
+
+commit dd2bbd6897f2a794adb3734c09a690f657d685d2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jun 3 18:27:36 2014 +0000
+
+    readme
+
+commit 307c91c4575a748c64ec98df041fb77a16c17e65
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jun 2 14:38:07 2014 +0000
+
+    packaging
+
+commit a766f7ac4c3b359582a96d18bb805c0f1be4b4e4
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jun 1 15:38:35 2014 +0000
+
+    readme
+
+commit b38558efb397ed608fbde3f19996f38edbaa993e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat May 31 14:00:56 2014 +0000
+
+    initial import from https://github.com/Whonix/Whonix
