@@ -1,3 +1,25 @@
+commit 0aaddb5cc9ed23c4ca2c5fc6a2779371f0e9fbc0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 8 07:15:14 2017 +0000
+
+    add support disabling stretch apt timer / unattended-upgrades
+    
+    etc/apt/apt.conf.d/20noperiodic -> etc/apt/apt.conf.d/90nounattended
+
+commit 073d60f70ddfb83b88aba557eeb9bd3e74a26c34
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 8 07:12:04 2017 +0000
+
+    fix for stretch
+    
+    APT::Periodic::Enable "0";
+
+commit 9d2a59d00f827616c063fa8550d19e8b0537bac2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Dec 10 02:22:41 2016 +0000
+
+    bumped changelog version
+
 commit 5a87d107135a0afd277b64c468e01aee1b2998b2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Nov 21 17:42:22 2016 +0000
