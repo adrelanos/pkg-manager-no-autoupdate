@@ -15,12 +15,16 @@ Standards-Version: 3.9.8
 Package: pkg-manager-no-autoupdate
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: kde-apper-no-autoupdate
 Suggests: pkg-manager-longer-timeouts
-Description: Deactivates automatic updates for Package Manager APT
+Replaces: kde-apper-no-autoupdate
+Description: Deactivates automatic updates for Package Manager APT and Apper
  Useful in context of networks with limited traffic quota, slow networks and
  anonymity distributions.
  .
  In latter case, the default automatic updates interval would be too
  predictable (expectable amount of traffic every X), thus eventually be
  vulnerable for traffic fingerprinting.
+ .
+ Disabling Apper automatic updates only takes effect for newly created user
+ accounts. Not for existing user accounts. This is most useful to help Linux
+ distribution maintainers setting divergent defaults.
