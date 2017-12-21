@@ -1,4 +1,4 @@
-# Deactivates automatic updates for Package Manager APT #
+# Deactivates automatic updates for Package Manager APT and Apper #
 
 Useful in context of networks with limited traffic quota, slow networks and
 anonymity distributions.
@@ -6,6 +6,10 @@ anonymity distributions.
 In latter case, the default automatic updates interval would be too
 predictable (expectable amount of traffic every X), thus eventually be
 vulnerable for traffic fingerprinting.
+
+Disabling Apper automatic updates only takes effect for newly created user
+accounts. Not for existing user accounts. This is most useful to help Linux
+distribution maintainers setting divergent defaults.
 
 (This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
 
